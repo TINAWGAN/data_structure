@@ -1,0 +1,90 @@
+slingly linked list: stacks n fifo queue
+push, pop, add, remove run in o(1)
+
+class Node(obj):
+        def __init__(self,data=None,next_node=None):
+                self.data = data
+                self.next = next_node
+                
+        def get_data(self):
+                return self.data
+                
+        def get_next(self)
+                return self.next
+        
+        def set_next(self, new_next):
+                self.next = new_next
+        
+        
+def __init__(self,initial=None):
+        self.front = self.back = self.current = None
+        self.next_node = self.current
+        
+        
+        
+        
+def empty(self):
+        return self.front == self.back == None
+        
+def __iter__(self):
+        self.current = self.front
+        return self
+        
+def __next__(self):
+        if self.current:
+                tmp = self.current.data
+                self.current = self.current.next
+                return tmp
+        else:
+                raise StopIteration()
+                
+
+
+def push_front(self, value):
+        new =self.Node(value,self.front)
+        if self.empty():
+                self.front = self.back =new
+        if self.empty is not None:
+                self.front = new
+                
+def push_back(self, value):
+        new = self.Node(value, self.back)
+        if self.empty():
+                self.back = self.front = new
+        
+        if self.empty() is not None:
+                if self.back.next is None:
+                        self.current = self.back
+                        self.back.next = new
+           
+def pop_front(self):
+        if self.empty():
+                return None
+        tmp = self.front.data
+        self.front = self.front.next_node
+        if not self.front:
+                self.back = None
+        return tmp
+
+def pop_back(self):
+        if self.empty():
+                return None
+        tmp = self.back.data
+        if not self.front.next:
+                self.front = self.back = None
+        else:
+                while self.front.next is not self.back:
+                        self.front = self.next
+                self.front.next_node = None
+                self.back= self.front
+        return tmp
+                
+           
+           
+           
+                
+                
+
+
+
+                
